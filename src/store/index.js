@@ -39,7 +39,7 @@ export default createStore({
       await axios.post("login", {
         username: "sarimalavi",
         password: "sarim123notreallyhashed"
-      }, { withCredentials: true });
+      });
       await commit("setUser", User.get("username"));
     },
     async CreatePost({ dispatch }, post) {
